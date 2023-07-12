@@ -109,6 +109,7 @@ def mainGame():
         playerHeight = GAME_SPRITES['player'].get_height()
         playery = playery + min(playerVelY, GROUNDY - playery - playerHeight)
 
+
         # move pipes to the left
         for upperPipe , lowerPipe in zip(upperPipes, lowerPipes):
             upperPipe['x'] += pipeVelX
